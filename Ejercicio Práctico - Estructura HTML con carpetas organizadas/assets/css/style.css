@@ -1,0 +1,91 @@
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header con fondo gris y borde inferior */
+header {
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    border-bottom: 2px solid #999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Barra de navegación */
+nav {
+    padding: 8px 20px;
+    border-bottom: 1px solid #999;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+nav a::after {
+    content: " |";
+    margin-left: 10px;
+}
+
+nav a:last-child::after {
+    content: "";
+}
+
+/* Contenedor principal con article y aside lado a lado */
+.contenido {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Área principal */
+article {
+    flex: 3;
+    border: 1px solid #999;
+    padding: 15px;
+    min-height: 400px;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+/* Imagen dentro del article */
+article img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+}
+
+/* Barra lateral */
+aside {
+    flex: 1;
+    border: 1px solid #999;
+    padding: 15px;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Pie de página */
+footer {
+    border-top: 1px solid #999;
+    padding: 10px 20px;
+    font-size: 13px;
+    color: #333;
+}
